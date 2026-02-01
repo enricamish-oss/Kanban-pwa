@@ -5,7 +5,7 @@
   "description": "Aplicació PWA per gestionar projectes amb un tauler Kanban, etiquetes i tasques.",
   "start_url": "./index.html",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "background_color": "#020617",
   "theme_color": "#020617",
   "icons": [
@@ -19,8 +19,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "categories": [
+    "lifestyle",
+    "personalization",
+    "utilities"
   ]
 }
-
-
-
