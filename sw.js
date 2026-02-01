@@ -2,7 +2,9 @@ const CACHE_NAME = 'kanban-pwa-v1';
 const ASSETS = [
   './',
   './index.html',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './icon-192.png', 
+  './icon-512.png'
 ];
 
 self.addEventListener('install', event => {
@@ -28,3 +30,4 @@ self.addEventListener('fetch', event => {
     caches.match(event.request).then(response => response || fetch(event.request))
   );
 });
+
