@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#020617">
   <meta charset="UTF-8" />
   <title>Gestor de projectes Kanban</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js');
+  });
+}
+</script>
 <body class="bg-slate-900 text-slate-100 min-h-screen">
   <div class="max-w-6xl mx-auto py-8 px-4">
     <header class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
@@ -652,3 +661,4 @@ window.addEventListener('focus', () => {
   </script>
 </body>
 </html>
+
