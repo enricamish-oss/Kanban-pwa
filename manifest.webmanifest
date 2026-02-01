@@ -1,4 +1,5 @@
 {
+  "id": "gestor-projectes-kanban",
   "name": "Gestor de projectes Kanban",
   "short_name": "Kanban",
   "start_url": "./index.html",
@@ -18,3 +19,4 @@
     }
   ]
 }
+
